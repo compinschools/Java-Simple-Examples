@@ -1,8 +1,8 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class FunctionsWithReturnType {
     public static boolean CheckX(int x) {
+
         if(x < 0) return false;
         switch(x){
             case 1:
@@ -21,8 +21,10 @@ public class Main {
                 System.out.println("You entered something else");
                 break;
         }
+
         return true;
     }
+
 
     public static void main(String[] args) {
 
@@ -34,7 +36,7 @@ public class Main {
             System.out.print("Enter x: ");
             x = objScanner.nextInt();
 
-            complete = CheckX(x);
+         complete = CheckX(x);
         }
     }
 }

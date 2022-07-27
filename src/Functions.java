@@ -1,9 +1,7 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
-    public static boolean CheckX(int x) {
-        if(x < 0) return false;
+public class Functions {
+    public static void CheckX(int x) {
         switch(x){
             case 1:
                 System.out.println("You entered one");
@@ -21,20 +19,16 @@ public class Main {
                 System.out.println("You entered something else");
                 break;
         }
-        return true;
     }
-
     public static void main(String[] args) {
 
         Scanner objScanner = new Scanner(System.in);
         int x = 0;
 
-        boolean complete = false;
-        while (!complete) {
-            System.out.print("Enter x: ");
-            x = objScanner.nextInt();
+        System.out.print("Enter x: ");
+        x = objScanner.nextInt();
 
-            complete = CheckX(x);
-        }
+        CheckX(x);
+
     }
 }
